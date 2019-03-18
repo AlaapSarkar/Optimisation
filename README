@@ -1,1 +1,16 @@
-Optimisation algorithms
+Benchmark functions: these functions are used to assess the performance of optimisation algorithms.
+  De jong function:
+  Rastrigin function:
+  Michalewicz function:
+  Schwefel function:
+  
+Optimisation algorithms: these algorithms are used to find the maxima or the minima of a given problem.
+  S algorithm:
+  Rosenbrock:
+  Random:
+  Simulated annealing:
+  
+Toro is toroidal correction which is a correction function used limits the solutions within given domain. If the vector falls outside the given domain then it is looped back from the other side.
+Another type of correction is saturation.
+
+Statistical analysis:
