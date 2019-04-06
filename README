@@ -1,16 +1,25 @@
-Benchmark functions: these functions are used to assess the performance of optimisation algorithms.
-  De jong function:
-  Rastrigin function:
-  Michalewicz function:
-  Schwefel function:
-  
-Optimisation algorithms: these algorithms are used to find the maxima or the minima of a given problem.
-  S algorithm:
-  Rosenbrock:
-  Random:
-  Simulated annealing:
-  
-Toro is toroidal correction which is a correction function used limits the solutions within given domain. If the vector falls outside the given domain then it is looped back from the other side.
-Another type of correction is saturation.
+1. de_jong.m: implementation of de jong function.
 
-Statistical analysis:
+2. michalewicz.m: implementation of michalewicz function.
+
+3. rastrigin.m: implementation of rastrigin function.
+
+4. schwefel.m: implementation of schwefel function.
+
+5. s_algorithm.m: implementation of s algorithm.
+
+6. toro.m: implementation of toroidal correction.
+
+7. test.m: : script to test s algorithm for different functions.
+    the different parameters are:
+    a. The input function.
+    b. The number of dimensions.
+    c. The lower limit of the domain.
+    d. The upper limit of the domain.
+    e. Radius reduction factors (can be a single value or a range of values to compare).
+    f. Number of iterations for each set of parameters.
+
+    All the data is stored in folders according to the parameters
+    testdata->problem->number of dimensions->radius reduction factor->data
+    data: list of consecutively better solutions and function values for each iteration of a set of parameters(example: test1.mat, test2.mat, test3.mat...)
+          list of best solutions found for a set of parameters over a number of iterations (best.mat)
