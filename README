@@ -3,7 +3,6 @@ PROBLEMS
 2. michalewicz.m: implementation of michalewicz function.
 3. rastrigin.m: implementation of rastrigin function.
 4. schwefel.m: implementation of schwefel function.
-5. toro.m: implementation of toroidal correction.
 
 OPTIMISERS
 1. s_algorithm.m: implementation of s algorithm.
@@ -22,3 +21,4 @@ MISCELLANEOUS
     testdata->problem->number of dimensions->radius reduction factor->data
     data: list of consecutively better solutions and function values for each iteration of a set of parameters(example: test1.mat, test2.mat, test3.mat...)
           list of best solutions found for a set of parameters over a number of iterations (best.mat)
+2. toro.m: implementation of toroidal correction.
