@@ -9,7 +9,8 @@ OPTIMISERS
 1. s_algorithm.m: implementation of s algorithm.
 2. simulated_annealing.m: implementation of simulated annealing algorithm.
 
-7. test.m: : script to test s algorithm for different functions.
+MISCELLANEOUS
+1. test.m: : script to test s algorithm for different functions.
     the different parameters are:
     a. The input function.
     b. The number of dimensions.
@@ -17,7 +18,6 @@ OPTIMISERS
     d. The upper limit of the domain.
     e. Radius reduction factors (can be a single value or a range of values to compare).
     f. Number of iterations for each set of parameters.
-
     All the data is stored in folders according to the parameters
     testdata->problem->number of dimensions->radius reduction factor->data
     data: list of consecutively better solutions and function values for each iteration of a set of parameters(example: test1.mat, test2.mat, test3.mat...)
