@@ -1,14 +1,13 @@
+PROBLEMS
 1. de_jong.m: implementation of de jong function.
-
 2. michalewicz.m: implementation of michalewicz function.
-
 3. rastrigin.m: implementation of rastrigin function.
-
 4. schwefel.m: implementation of schwefel function.
+5. toro.m: implementation of toroidal correction.
 
-5. s_algorithm.m: implementation of s algorithm.
-
-6. toro.m: implementation of toroidal correction.
+OPTIMISERS
+1. s_algorithm.m: implementation of s algorithm.
+2. simulated_annealing.m: implementation of simulated annealing algorithm.
 
 7. test.m: : script to test s algorithm for different functions.
     the different parameters are:
