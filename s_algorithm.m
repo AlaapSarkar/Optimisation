@@ -9,7 +9,7 @@
 % r_factor is the reduction factor of search radius
 % up_l is the upper limit of the domain
 % low_l is the lower limit of the domain
-
+% && r>0.0001 in line 22 limits the accuracy to increase the speed of the algorithm
 function [x_cb,f_min,list_x,list_f]=s_algorithm(func,n,up_l,low_l,max_call,dom_fr,r_factor)
 d=up_l-low_l;
 x_cb=d*rand(1,n)+low_l;
@@ -19,7 +19,7 @@ count=0;
 list_x=zeros(max_call,n);
 list_f=zeros(max_call,1);
 c=1;
-while count<max_call
+while count<max_call && r>0.0001
     f_i=f_min;
     for i=1:n
         P=x_cb;
