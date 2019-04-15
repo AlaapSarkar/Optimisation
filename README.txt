@@ -1,0 +1,26 @@
+1. de_jong.m: implementation of de jong function.
+
+2. michalewicz.m: implementation of michalewicz function.
+
+3. rastrigin.m: implementation of rastrigin function.
+
+4. schwefel.m: implementation of schwefel function.
+
+5. s_algorithm.m: implementation of s algorithm.
+   s_algorithm_r.m: added normal randomness (reduces as radius reduces) when moving along the axis, reduces performance for specific reduction factors but improves for other cases.
+
+6. toro.m: implementation of toroidal correction.
+
+7. test.m: : script to test s algorithm for different functions.
+    the different parameters are:
+    a. The input function.
+    b. The number of dimensions.
+    c. The lower limit of the domain.
+    d. The upper limit of the domain.
+    e. Radius reduction factors (can be a single value or a range of values to compare).
+    f. Number of iterations for each set of parameters.
+
+    All the data is stored in folders according to the parameters
+    testdata->problem->number of dimensions->radius reduction factor->data
+    data: list of consecutively better solutions and function values for each iteration of a set of parameters(example: test1.mat, test2.mat, test3.mat...)
+          list of best solutions found for a set of parameters over a number of iterations (best.mat)
