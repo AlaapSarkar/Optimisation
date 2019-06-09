@@ -1,26 +1,33 @@
-1. de_jong.m: implementation of de jong function.
+.mat file:
+cec2014.mat: ranges for all the functions implemented (needs to be loaded before running files).
+results.mat: contains 3 structures which are the final data comparing S (results2) DE(results1) and DES(resaults)
 
-2. michalewicz.m: implementation of michalewicz function.
+.m files:
 
-3. rastrigin.m: implementation of rastrigin function.
+1. ackley.m: ackley function
+2. alpine.m: alpine function
+3. de_jong.m: de jong (or sphere) function
+4. DE_S.m: as the points come closer the probability of S algorithm increases (needs to be refined)
+5. DE_S2.m: DE or S is randomly applied on an individual from the population
+6. de_test.m: used to test various parameters of differential_evolution_Smut.m (mainly scaling factor F which can be a single value or an array)
+7. DES.m: S algorithm applied on the best solutions and mutation and crossover applied to others.
+8. differential_evolution.m: implementation of differential evolution.
+9. differential_evolution_Smut.m: differential evolution with S as a factor in mutation vector.
+10. evolutionary_programming.m: implementation of evolutionry programming.
+11. final_test.m: file used to generate data for the different algorithms
+12. happy_cat.m: happy cat function
+13. HGBat.m: HGBat function
+14. katsuura.m: katsuura function
+15. memetic.m: file comparing differential_evolution.m, s_algorithm.m and DE_S2.m
+16. michalewicz.m: michalewicz function
+17. rosenbrock_function.m: rosenbrock function
+18. s_algorithm.m: implementation of S algorithm
+19. s_algorithm_nm.m: non monotonic S algorithm
+20. schwefel.m: schwefel function
+21. simulated_annealing.m: implementation of simulated annealing algorithm
+22. solis_wets.m: implementation of solis wets algorithm
+23. stochastic_s_algorithm.m: S algorithm with randomness
+24. test.m: used to test s algorithms
+25. toro.m: toroidal correction
 
-4. schwefel.m: implementation of schwefel function.
-
-5. s_algorithm.m: implementation of s algorithm.
-   s_algorithm_r.m: added normal randomness (reduces as radius reduces) when moving along the axis, reduces performance for specific reduction factors but improves for other cases.
-
-6. toro.m: implementation of toroidal correction.
-
-7. test.m: : script to test s algorithm for different functions.
-    the different parameters are:
-    a. The input function.
-    b. The number of dimensions.
-    c. The lower limit of the domain.
-    d. The upper limit of the domain.
-    e. Radius reduction factors (can be a single value or a range of values to compare).
-    f. Number of iterations for each set of parameters.
-
-    All the data is stored in folders according to the parameters
-    testdata->problem->number of dimensions->radius reduction factor->data
-    data: list of consecutively better solutions and function values for each iteration of a set of parameters(example: test1.mat, test2.mat, test3.mat...)
-          list of best solutions found for a set of parameters over a number of iterations (best.mat)
+figs folder: interesting plots showing the difficulty in solving rosenbrock function. They were produced using s algorithm, we can see that the radius remains same for a number of iterations for rosenbrock which means that the algorithm found a better solution every iteration in that period. Rosenbrock is a very flat function in the middle, the steps the algorithm took were too small compared to the slope so it takes many iteratioins to converge.
