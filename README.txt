@@ -29,5 +29,3 @@ results.mat: contains 3 structures which are the final data comparing S (results
 23. stochastic_s_algorithm.m: S algorithm with randomness
 24. test.m: used to test s algorithms
 25. toro.m: toroidal correction
-
-figs folder: interesting plots showing the difficulty in solving rosenbrock function. They were produced using s algorithm, we can see that the radius remains same for a number of iterations for rosenbrock which means that the algorithm found a better solution every iteration in that period. Rosenbrock is a very flat function in the middle, the steps the algorithm took were too small compared to the slope so it takes many iteratioins to converge.
