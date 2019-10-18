@@ -29,3 +29,5 @@ results.mat: contains 3 structures which are the final data comparing S (results
 23. stochastic_s_algorithm.m: S algorithm with randomness
 24. test.m: used to test s algorithms
 25. toro.m: toroidal correction
+
+Check out the wiki for the documentation.
